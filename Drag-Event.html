@@ -1,0 +1,25 @@
+<img
+  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImwyqrLy48vEeGHgunO7tNM15gZ95eE4foiab-uHBSQ&s=10"
+  alt="Naruto"
+  draggable="true"
+  ondragstart="f1(this)"
+/>
+
+<div
+  ondragover="event.preventDefault()"
+  ondrop="f2(this)"
+  style="border: 2px solid black; padding: 30px; width: 300px;"
+>
+  <h1><b>Hello</b></h1>
+</div>
+
+<script>
+  function f1(record) {
+    console.log("Image Dragged!");
+    console.log(Math.random());
+  }
+
+  function f2(record) {
+    console.log("Image Dropped!!");
+  }
+</script>
